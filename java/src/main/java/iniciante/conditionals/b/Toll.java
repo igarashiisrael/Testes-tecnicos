@@ -3,7 +3,15 @@ package iniciante.conditionals.b;
 public class Toll {
     public double calculateTollPayment(Vehicle vehicle) {
         // TODO
-        return -1.00;
+        if (vehicle.isOfficial() == true || vehicle.getNumberOfWheels() <= 2) {
+            return 0;
+        } else if (vehicle.getNumberOfWheels() <= 6) {
+            return vehicle.getNumberOfWheels() * 1.30;
+        } else if (vehicle.getNumberOfWheels() > 7){
+            return 10.0;
+        } else {
+            return -1.00;
+        }
     }
 }
 
