@@ -7,6 +7,11 @@ public class DecreasingLoop {
     public List<Integer> reverseItems(List<Integer> items) {
         List<Integer> reversedItems = new ArrayList<>();
         // TODO
+        for (int i = items.size() - 1; i >= 0; i--) {
+            Integer element = items.get(i);
+            reversedItems.add(element);
+        }
+
         return reversedItems;
     }
 }

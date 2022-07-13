@@ -5,6 +5,12 @@ import java.util.List;
 public class IncreasingLoop {
     public Integer sumItems(List<Integer> items) {
         // TODO
+        int sum = 0;
+        for (int i = 0; i < items.size(); i++) {
+            do {sum += items.get(i);
+            return sum; } while (i<=10);
+            }
+
         return -1;
     }
 }
