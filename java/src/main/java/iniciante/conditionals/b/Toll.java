@@ -23,7 +23,7 @@ Toll é um pedágio.
 Dado um veículo, retorne o valor à ser pago no pedágio.
 Regras:
 - Veículos com 2 rodas não pagam pedágio.
-- Veículos de 4 rodas  pagam R$5,20.
+- Veículos de 4 rodas pagam R$5,20.
 - Veículos de 6 ou mais rodas pagam R$2,60 a cada 2 rodas, limitado à R$10,00.
 - Veículo oficiais não pagam pedágio, independente da quantidade de rodas.
 

@@ -4,6 +4,18 @@ public class AreaCalculation {
     private final double pi = 3.14;
     public double calcArea(Shape shape) {
         // TODO
+        if (shape.getMultiplier() <= 0){
+            throw new IllegalArgumentException();
+        }
+
+        if (shape instanceof Circle) {
+            return Math.pow(shape.getMeasure(), 2) * pi * shape.getMultiplier();
+        } else if (shape instanceof Triangle) {
+            return (shape.getMeasure() * shape.getMeasure() / 2) * shape.getMultiplier();
+        } else if (shape instanceof Square) {
+            return (shape.getMeasure() * shape.getMeasure()) * shape.getMultiplier();
+        }
+
         return -1.00;
     }
 }
